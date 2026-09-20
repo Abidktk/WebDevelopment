@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- Start Screen -->
+    <div class="container" id="startScreen">
+
+        <h1>JavaScript Quiz</h1>
+
+        <p>
+            Test your JavaScript knowledge.
+        </p>
+
+        <div class="instructions">
+
+            <h3>Instructions</h3>
+
+            <ul>
+                <li>Total Questions: <strong>10</strong></li>
+                <li>Each question has <strong>4 options</strong></li>
+                <li>You have <strong>60 seconds</strong> for each question.</li>
+                <li>Quiz will automatically move to the next question when time is over.</li>
+                <li>Your final result will be shown at the end.</li>
+
+            </ul>
+
+        </div>
+
+        <button id="startBtn">
+            Start Quiz
+        </button>
+
+    </div>
+
+
+    <!-- Quiz Screen -->
+
+    <div class="container hidden" id="quizScreen">
+
+        <div class="top">
+
+            <h3 id="questionNumber">
+                Question 1 / 10
+            </h3>
+
+            <h3 id="timer">
+                60
+            </h3>
+
+        </div>
+
+
+        <div class="progressBar">
+
+            <div id="progress"></div>
+
+        </div>
+
+
+        <h2 id="question">
+
+            Question will appear here
+
+        </h2>
+
+
+        <div id="options">
+
+            <!-- Options will come from JavaScript -->
+
+        </div>
+
+
+        <div class="navigation">
+
+            <button id="prevBtn">
+                Previous
+            </button>
+
+            <button id="nextBtn">
+                Next
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Result Screen -->
+
+    <div class="container hidden" id="resultScreen">
+
+        <h1>
+            Quiz Finished 🎉
+        </h1>
+
+        <div class="resultBox">
+
+            <h2 id="score"></h2>
+
+            <h3 id="correct"></h3>
+
+            <h3 id="wrong"></h3>
+
+            <h3 id="unanswered"></h3>
+
+            <h3 id="percentage"></h3>
+
+        </div>
+
+
+        <div id="review">
+
+            <!-- Review answers here -->
+
+        </div>
+
+        <button id="restartBtn">
+
+            Restart Quiz
+
+        </button>
+
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
